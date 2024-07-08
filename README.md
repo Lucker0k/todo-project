@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# Приложение TodoList
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Этот репозиторий содержит приложение TodoList, построенное с использованием React, Redux Toolkit (RTK), TypeScript и Toastify для уведомлений. Приложение позволяет пользователям управлять задачами с функциями добавления, удаления, редактирования, валидации, фильтрации, изменения статуса задач и сохранения данных в локальном хранилище с помощью Redux Persist.
 
-Currently, two official plugins are available:
+## Особенности
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Добавление задач:** Добавление новых задач в ваш список дел.
+- **Удаление задач:** Удаление задач индивидуально или все сразу.
+- **Редактирование задач:** Редактирование существующих задач непосредственно.
+- **Валидация:** Проверка задач на соответствие определенным критериям.
+- **Отображение ошибок:** Отображение ошибок, если валидация задачи не пройдена.
+- **Фильтрация задач:** Фильтрация задач по статусу (например, все, выполненные, в процессе).
+- **Изменение статуса задач:** Обновление статуса задачи (например, выполнено, в процессе).
+- **Сохранение в локальном хранилище: LocalStorage** Сохранение задач в локальном хранилище для сохранения данных.
+- **Удаление конкретной задачи:** Удаление задачи из списка.
 
-## Expanding the ESLint configuration
+## Используемые библиотеки
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React:** Фронтенд-библиотека для создания пользовательских интерфейсов.
+- **Redux Toolkit (RTK):** Библиотека для управления состоянием в React-приложениях.
+- **Redux Persist:** Постоянное хранение состояния Redux в локальном хранилище для безопасности данных.
+- **Toastify:** Библиотека уведомлений для отображения сообщений об успехе, ошибке и предупреждениях.
 
-- Configure the top-level `parserOptions` property like this:
+## Используемые технологии
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **TypeScript:** Предоставляет типизацию и улучшенный опыт разработки.
+- **HTML/CSS:** Базовая структура и стилизация приложения.
+- **JavaScript (ES6+):** Логика и взаимодействие с элементами на странице.
+- **Git:** Система контроля версий для отслеживания изменений в кодовой базе.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Инструкции по настройке
+
+1. **Клонировать репозиторий:**
+   ```bash
+   git clone https://github.com/your/repository.git
+   ```
