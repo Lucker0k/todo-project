@@ -11,6 +11,7 @@ export interface ITodoFunc {
 
 export interface IState {
   todos: ITodos[];
+  filterStatus: string;
   loading: boolean;
   error: string;
 }

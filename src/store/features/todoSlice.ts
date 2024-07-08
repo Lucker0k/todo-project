@@ -3,6 +3,7 @@ import { IState } from "../../interface";
 
 const initialState: IState = {
   todos: [],
+  filterStatus: "all",
   loading: false,
   error: "",
 };
@@ -37,9 +38,21 @@ export const todoSlice = createSlice({
 
       changedTodo.text = textInput;
     },
+    deleteAllTodos: (state) => {
+      state.todos = [];
+    },
+    filterStatus: (state, action) => {
+      state.filterStatus = action.payload;
+    },
   },
 });
 
-export const { addTodo, deleteTodo, changeStatus, changeTextTodo } =
-  todoSlice.actions;
+export const {
+  addTodo,
+  deleteTodo,
+  changeStatus,
+  changeTextTodo,
+  deleteAllTodos,
+  filterStatus,
+} = todoSlice.actions;
 export default todoSlice.reducer;
