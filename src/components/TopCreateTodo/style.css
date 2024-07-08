@@ -1,0 +1,23 @@
+.top__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.top__input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid grey;
+  font-size: 25px;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+.top__btn {
+  width: 100px;
+  height: 25px;
+  background-color: black;
+  color: #ffffff;
+}
